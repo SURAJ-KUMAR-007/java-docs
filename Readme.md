@@ -1,3 +1,21 @@
+# 📘 Java Basics Guide
+
+## 🔎 Table of Contents
+- [📦 Package](#package)
+- [🔗 Java Variables](#-java-variables)
+- [📘 Types of Variables in Java](#-types-of-variables-in-java)
+    - [🔹 Instance Variables](#-instance-variables-non-static-fields)
+    - [🔹 Class Variables](#-class-variables-static-fields)
+    - [🔹 Local Variables](#-local-variables)
+    - [🔹 Parameters](#-parameters)
+- [🧠 Modifiers Explained](#-modifiers-explained)
+- [📊 Fields vs Variables](#-difference-between-fields-and-variables-in-java)
+- [💡 Example Code for Variable Types](#-example-code)
+- [🧵 Breakdown of main Method](#-breakdown-of-public-static-void-mainstring-args)
+- [🖨️ Breakdown of System.out.println()](#-breakdown-of-systemoutprintln)
+
+---
+
 # Package
 
 - Think of packages similar to different folders on our computers.
@@ -47,17 +65,18 @@
 > 🧠 *Used to receive data from the caller when a method is invoked.*
 
 
-> **Note:**
->
-> 1. A **modifier** is a specific type of **keyword** used to change the behavior of:
->    - Classes
->    - Methods
->    - Variables
->
-> 2. **Types:**
->    - `public` → access modifier
->    - `static` → class-level modifier
->    - `final` → value/immutability modifier
+## 🧠 Modifiers Explained
+
+1. A **modifier** is a specific type of **keyword** used to change the behavior of:
+    - Classes
+    - Methods
+    - Variables
+
+2. **Types:**
+    - `public` → access modifier
+    - `static` → class-level modifier
+    - `final` → value/immutability modifier
+
 
 
 ## 🔍 Difference Between Fields and Variables in Java
