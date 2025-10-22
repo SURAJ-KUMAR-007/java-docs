@@ -45,7 +45,7 @@
 > 🧠 *Used to store common/shared properties across all objects.*
 
 ---
-
+    
 ### 🔹 Local Variables
 - Declared **within methods**, constructors, or blocks.
 - Not accessible outside the method/block they're declared in.
@@ -92,6 +92,11 @@
 | **Example**          | `int speed;` inside class                                 | `int i = 0;` inside a method                                |
 
 > 🧠 **All fields are variables, but not all variables are fields.**
+> 🧠 **The eight primitive data types are: byte, short, int, long, float, double, boolean, and char. The java.lang.String class represents character strings. The compiler will assign a reasonable default value for fields of the above types;
+> for local variables, a default value is never assigned.**
+> 🧠A literal is the source code representation of a fixed value. 
+> 🧠An array is a container object that holds a fixed number of values of a single type.
+> The length of an array is established when the array is created. After creation, its length is fixed.
 
 ---
 
@@ -190,3 +195,27 @@ Understanding how Java prints to the console:
 | `System`         | Java class that provides access to system-level resources         |
 | `out`            | Static `PrintStream` object for writing output to the console     |
 | `println()`      | Method that prints a line of text and moves to the next line      |
+
+
+## Using the Var Type Identifier
+Compiler decide what is the real type of the variable you create.
+Once created, this type cannot be changed.
+```
+var message = "Hello world!";
+var path = Path.of("debug.log");
+var stream = Files.newInputStream(path);
+
+var list = List.of("one", "two", "three", "four");
+for (var element: list) {
+        System.out.println(element);
+}
+
+
+```
+There are restrictions on the use of the var type identifier.
+
+1. You can only use it for local variables declared in methods, constructors and initializer blocks.
+2. var cannot be used for fields, nor for method or constructor parameters.
+3. The compiler must be able to choose a type when the variable is declared. Since null has no type, the variable must have an initializer.
+
+
